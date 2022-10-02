@@ -34,6 +34,7 @@ function news(data) {
       res.push(data[j]);
     }
   }
+  console.log(res);
   while (i < parseInt(document.getElementById("news").value)) {
     $("#contain").append(
       `
