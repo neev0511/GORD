@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>companyname</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.js"
+      integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Logo Image" />
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">Latest News</a></li>
+        <li><a href="login.html">LogIn/SignUp</a></li>
+        <li><a href="account.html" class="hidden">Your Account</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <div class="filter">
+        <div class="left">Filter</div>
+        <div class="right">
+          <label for="news">No. of news</label>
+          <select name="news" id="news" onchange="changeFunction(this)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="cards" id="cards">
+        <div class="container" id="contain"></div>
+      </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3><span>companyname</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          |
+          <a href="about.html">About</a>
+          |
+          <a href="news.html">Latest News</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2022 <strong>companyname</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Address</span></p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+phone no</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:email">emails</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About Us</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+          deleniti quaerat. Ratione sequi quibusdam labore ipsa, aspernatur iste
+          aut tempora corporis. Nobis, similique. Quisquam explicabo delectus
+          atque ipsam in quod?
+          <a href="#" class="footer-company-about-readmore"> Read more...</a>
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/news.js"></script>
+    <script>
+      function changeFunction(selct) {
+        getNews();
+      }
+    </script>
+  </body>
+</html>
