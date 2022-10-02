@@ -10,6 +10,7 @@ function getNews() {
     })
     .then(function (data) {
       // This is the JSON from our response
+      console.log(data.articles);
       news(data.articles);
     })
     .catch(function (err) {
