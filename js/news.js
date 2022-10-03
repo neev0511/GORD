@@ -1,7 +1,9 @@
 const API_KEY = "b66c02de279d403a88a0e24c6323a692";
 
 function getNews() {
-  fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json")
+  fetch(
+    "https://newsapi.org/v2/everything?q='pompe diseases'&language=en&apiKey=b66c02de279d403a88a0e24c6323a692"
+  )
     .then(function (response) {
       return response.json();
     })
