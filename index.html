@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/home-content.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/login_popup.css" />
     <style>
       .footer-center {
         padding-left: 35px;
@@ -34,11 +35,19 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="news.html">Latest News</a></li>
-        <li><a href="login.html">LogIn/SignUp</a></li>
         <li><a href="account.html" class="hidden">Your Account</a></li>
       </ul>
     </nav>
     <section class="content">
+      <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Login/Signup</h2>
+        <p>
+          Hi 👋 <br />
+          Interested in logging in first?
+        </p>
+        <a href="login.html">Let's Go</a>
+      </div>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate veniam
       obcaecati mollitia deserunt nobis? Doloribus architecto molestiae
       molestias soluta iure eos eius sed, nostrum libero, vero hic enim quam
@@ -161,5 +170,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
