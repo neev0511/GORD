@@ -53,19 +53,9 @@
       <div class="filter">
         <div class="left">Filter</div>
         <div class="right">
-          <label for="news">No. of news</label>
-          <select name="news" id="news" onchange="changeFunction(this)">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5" selected>5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
+          <button class="btn-fliter" id="fabry">Fabry</button>
+          <button class="btn-fliter" id="sickle">Sickle Cell</button>
+          <button class="btn-fliter" id="pompe">Pompe</button>
         </div>
       </div>
       <div class="cards" id="cards">
@@ -128,9 +118,25 @@
     <script src="js/nav.js"></script>
     <script src="js/news.js"></script>
     <script>
+      function changeNews() {}
       function changeFunction(selct) {
         getNews();
       }
+      function pompe() {
+        document.getElementById("pompe").classList.toggle("selected");
+        changeNews("pompe");
+      }
+      function sickle() {
+        document.getElementById("sickle").classList.toggle("selected");
+        changeNews("sickle");
+      }
+      function fabry() {
+        document.getElementById("fabry").classList.toggle("selected");
+        changeNews("fabry");
+      }
+      document.getElementById("pompe").addEventListener("click", pompe);
+      document.getElementById("fabry").addEventListener("click", fabry);
+      document.getElementById("sickle").addEventListener("click", sickle);
     </script>
   </body>
 </html>

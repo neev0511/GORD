@@ -13,6 +13,18 @@
     text-decoration: none;
 }
 
+.selected {
+  background-color: #2F80ED;
+}
+
+.btn-fliter {
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  margin-top: -15px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -123,6 +135,11 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #666;
 }
 
+@media (max-width: 450px) {
+  .right {
+    margin-left: 70px;
+  }
+}
 @media (max-width: 350px) {
     .card{
         width: 270px;
