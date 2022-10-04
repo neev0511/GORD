@@ -1,7 +1,5 @@
 const API_KEY = "b66c02de279d403a88a0e24c6323a692";
 
-var res = [];
-
 function getNews() {
   // fetch(
   //   "https://newsapi.org/v2/everything?q='fabry diseases'&language=en&apiKey=b66c02de279d403a88a0e24c6323a692"

@@ -137,8 +137,14 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
 
 @media (max-width: 450px) {
   .right {
-    margin-left: 70px;
+    margin-left: 5%;
+    margin-right: 10px;
   }
+  .btn-fliter:last-child {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
 }
 @media (max-width: 350px) {
     .card{
