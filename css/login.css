@@ -65,6 +65,7 @@
   align-items: center;
   padding: 40px;
   transition: 0.5s;
+  overflow-y: scroll;
 }
 
 .content section .container .user .formBx form h2 {

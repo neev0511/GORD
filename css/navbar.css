@@ -177,7 +177,7 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .bx-menu{
   display: none;
 }
-@media (max-width:920px) {
+@media (max-width:1000px) {
   nav .navbar{
     max-width: 100%;
     padding: 0 25px;
@@ -194,7 +194,7 @@ nav .navbar .links li:hover .js-sub-menu{
     font-size: 15px;
   }
 }
-@media (max-width:800px){
+@media (max-width:900px){
   .navbar .bx-menu{
     display: block;
   }

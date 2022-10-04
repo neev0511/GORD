@@ -19,6 +19,23 @@ let dropdown1 = document.querySelector(".dropdown1");
 dropdown1.onclick = function () {
   navLinks.classList.toggle("show1");
 };
+let dropdown2 = document.querySelector(".dropdown2");
+dropdown2.onclick = function () {
+  navLinks.classList.toggle("show3");
+};
+
+if (localStorage.getItem("login") === "true") {
+  document.querySelector(".login_account").style.display = "inline-block";
+} else {
+  document.querySelector(".login_account").style.display = "none";
+}
+
+function logout() {
+  console.log("logging out");
+  localStorage.setItem("login", false);
+  window.alert("You have been logged out");
+  location.reload();
+}
 
 // $(window).scroll(function () {
 //   var scroll = $(window).scrollTop();

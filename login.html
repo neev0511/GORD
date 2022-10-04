@@ -28,14 +28,25 @@
           <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="news.html">Latest News</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="medicine.html">Medicines</a></li>
             <li>
-              <a href="#">Dropdown 1</a>
+              <a href="#">Connect with</a>
+              <i class="bx bxs-chevron-down dropdown2 arrow"></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="centre_excel.html">Centre of Excellence</a></li>
+                <li><a href="ngo.html">NGOs</a></li>
+                <li><a href="nutrition.html">Nutritionists</a></li>
+                <li><a href="pathlab.html">Pathlabs</a></li>
+              </ul>
+            </li>
+            <li class="login_account">
+              <a href="#">Account</a>
               <i class="bx bxs-chevron-down dropdown1 arrow"></i>
               <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="#">Service 1</a></li>
-                <li><a href="#">Service 2</a></li>
-                <li><a href="#">Service 3</a></li>
+                <li><a href="info.html">Your info</a></li>
+                <li><a href="disease.html">Disease</a></li>
+                <li><a href="#" onclick="logout();">Logout</a></li>
               </ul>
             </li>
           </ul>
@@ -50,11 +61,22 @@
               <img class="imgLOG" src="images/log.svg" alt="" />
             </div>
             <div class="formBx">
-              <form action="" onsubmit="return false;">
-                <h2>Sign In</h2>
-                <input type="text" name="" placeholder="Username" />
-                <input type="password" name="" placeholder="Password" />
-                <input type="submit" name="" value="Login" />
+              <form action="" onsubmit="return false;" autocomplete="on">
+                <h2>Log in</h2>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Email"
+                  id="login-email"
+                />
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Password"
+                  autocomplete="off"
+                  id="login-password"
+                />
+                <input type="submit" name="" onclick="login();" value="Login" />
                 <p class="signup">
                   Don't have an account ?
                   <a href="#" onclick="toggleForm();">Sign Up.</a>
@@ -64,16 +86,78 @@
           </div>
           <div class="user signupBx">
             <div class="formBx">
-              <form action="" onsubmit="return false;">
-                <h2>Create an account</h2>
-                <input type="text" name="" placeholder="Username" />
-                <input type="email" name="" placeholder="Email Address" />
-                <input type="password" name="" placeholder="Create Password" />
-                <input type="password" name="" placeholder="Confirm Password" />
-                <input type="submit" name="" value="Sign Up" />
+              <form
+                action="register()"
+                onsubmit="return false;"
+                autocomplete="on"
+              >
+                <h2 style="margin-top: 150px">Create an account</h2>
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Name"
+                  id="register-name"
+                  required
+                />
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Email Address"
+                  required
+                  id="register-email"
+                />
+                <input
+                  type="password"
+                  name=""
+                  placeholder="Create Password"
+                  required
+                  id="register-password"
+                  autocomplete="on"
+                />
+                <input
+                  type="number"
+                  name=""
+                  placeholder="Age"
+                  required
+                  id="register-age"
+                />
+                <label for="" style="margin-left: 10px">Gender:</label>
+                <select name="gender" id="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option></select
+                ><br />
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Blood Group"
+                  id="register-blood-group"
+                  required
+                />
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Location"
+                  id="register-location"
+                  required
+                />
+                <label for="" style="margin-left: 10px">Disease:</label>
+                <select name="disease" id="diseases">
+                  <option value="Fabry">Fabry</option>
+                  <option value="Pompe">Pompe</option>
+                  <option value="Sickle Cell Anemia">
+                    Sickle Cell Anemia
+                  </option></select
+                ><br />
+                <input
+                  type="submit"
+                  name=""
+                  value="Sign Up"
+                  onclick="register();"
+                />
                 <p class="signup">
                   Already have an account ?
-                  <a href="#" onclick="toggleForm();">Sign in.</a>
+                  <a href="#" onclick="toggleForm();">Log in.</a>
                 </p>
               </form>
             </div>
