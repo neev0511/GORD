@@ -19,20 +19,3 @@ let dropdown1 = document.querySelector(".dropdown1");
 dropdown1.onclick = function () {
   navLinks.classList.toggle("show1");
 };
-
-// $(window).scroll(function () {
-//   var scroll = $(window).scrollTop();
-//   if (scroll > 00) {
-//     $("nav").css("background", "#131418");
-//     $(".has-dropdown ul").css("background", "#131418");
-//     $("nav").css("color", "#f2f5f7");
-//     $(".nav-links li a").css("color", "#f2f5f7");
-//     $("nav").css("box-shadow", "0 3px 20px rgba(0, 0, 0, 0.2)");
-//   } else {
-//     $("nav").css("background", "transparent");
-//     $(".has-dropdown ul").css("background", "transparent");
-//     $("nav").css("color", "black");
-//     $(".nav-links li a").css("color", "black");
-//     $("nav").css("box-shadow", "none");
-//   }
-// });

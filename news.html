@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>companyname</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/news.css" />
     <link rel="stylesheet" href="css/navbar.css" />
@@ -17,36 +21,30 @@
   </head>
   <body>
     <nav>
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Logo Image" />
-      </div>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="news.html">Latest News</a></li>
-        <nav>
-          <div class="logo">
-            <img src="images/logo.jpg" alt="Logo Image" />
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo"><a href="#">companyname</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">companyname</span>
+            <i class="bx bx-x"></i>
           </div>
-          <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-links">
+          <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="news.html">Latest News</a></li>
-            <li><a href="account.html" class="hidden">Your Account</a></li>
+            <li>
+              <a href="#">Dropdown 1</a>
+              <i class="bx bxs-chevron-down dropdown1 arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+              </ul>
+            </li>
           </ul>
-        </nav>
-        <li><a href="account.html" class="hidden">Your Account</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
     <section class="content">

@@ -671,9 +671,12 @@ function changeNews(x) {
   ];
   document.getElementById("contain").innerHTML = "";
   if (
-    !$("#pompe").hasClass("selected") &&
-    !$("#sickle").hasClass("selected") &&
-    !$("#fabry").hasClass("selected")
+    (!$("#pompe").hasClass("selected") &&
+      !$("#sickle").hasClass("selected") &&
+      !$("#fabry").hasClass("selected")) ||
+    ($("#pompe").hasClass("selected") &&
+      $("#sickle").hasClass("selected") &&
+      $("#fabry").hasClass("selected"))
   ) {
     i = 0;
     while (i < 15) {
