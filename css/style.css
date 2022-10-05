@@ -28,3 +28,11 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  .normal-heading {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #e94949;
+}
