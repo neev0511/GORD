@@ -21,3 +21,32 @@ var swiper = new Swiper(".slide-content", {
     },
   },
 });
+
+if (localStorage.getItem("login") === "true") {
+  $(".button").css("display", "block");
+  if (localStorage.getItem("disease") === "Fabry") {
+    console.log("Fabry");
+    $("#sickle-cell-disease").css("display", "none");
+    $("#pompe-disease").css("display", "none");
+  } else if (localStorage.getItem("disease") === "Pompe") {
+    $("#sickle-cell-disease").css("display", "none");
+    $("#fabry-disease").css("display", "none");
+    $("#pompe-disease").css("display", "block");
+  } else {
+    $("#pompe-disease").css("display", "none");
+    $("#fabry-disease").css("display", "none");
+    $("#sickle-cell-disease").css("display", "block");
+  }
+} else {
+  $(".button").css("display", "none");
+}
+
+function fabry_meet() {
+  console.log("fabry");
+}
+function sickle_cell_meet() {
+  console.log("sickle");
+}
+function pompe_meet() {
+  console.log("pompe");
+}
