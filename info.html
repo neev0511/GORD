@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>companyname</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/home-content.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/your_info.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo"><a href="#">companyname</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">companyname</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="medicine.html">Medicines</a></li>
+            <li>
+              <a href="#">Connect with</a>
+              <i class="bx bxs-chevron-down dropdown2 arrow"></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="centre_excel.html">Centre of Excellence</a></li>
+                <li><a href="ngo.html">NGOs</a></li>
+                <li><a href="nutrition.html">Nutritionists</a></li>
+                <li><a href="pathlab.html">Pathlabs</a></li>
+              </ul>
+            </li>
+            <li class="login_account">
+              <a href="#">Account</a>
+              <i class="bx bxs-chevron-down dropdown1 arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="info.html">Your info</a></li>
+                <li><a href="disease.html">Disease</a></li>
+                <li><a href="#" onclick="logout();">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <img src="images/world.png" alt="" class="world" />
+      <h1 class="heading">TOGETHER WE STAND</h1>
+    </div>
+    <section class="content">
+      <div class="normal-heading">Your Information</div>
+      <div class="your_info left-home">
+        <div id="name">Name:</div>
+        <div id="email">Email:</div>
+        <div id="age">Age:</div>
+        <div id="gender">Gender:</div>
+        <div id="blood_group">Blood Group:</div>
+        <div id="location">Address:</div>
+        <div id="disease">Disease:</div>
+      </div>
+    </section>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3><span>companyname</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          |
+          <a href="about.html">About</a>
+          |
+          <a href="news.html">Latest News</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2022 <strong>companyname</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <img src="images/location.png" alt="" class="social social-extra" />
+          <p><span>Address</span></p>
+        </div>
+
+        <div>
+          <img src="images/call.png" alt="" class="social social-extra" />
+          <p>+phone no</p>
+        </div>
+        <div>
+          <img src="images/email.png" alt="" class="social social-extra" />
+          <p><a href="mailto:email">emails</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About Us</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+          deleniti quaerat. Ratione sequi quibusdam labore ipsa, aspernatur iste
+          aut tempora corporis. Nobis, similique. Quisquam explicabo delectus
+          atque ipsam in quod?
+          <a href="#" class="footer-company-about-readmore"> Read more...</a>
+        </p>
+        <div class="footer-icons">
+          <a href="#"
+            ><img src="images/facebook.png" alt="" class="social"
+          /></a>
+          <a href="#"
+            ><img src="images/instagram.png" alt="" class="social"
+          /></a>
+          <a href="#"><img src="images/twitter.png" alt="" class="social" /></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.js"
+      integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/nav.js"></script>
+    <script src="js/info.js"></script>
+  </body>
+</html>
