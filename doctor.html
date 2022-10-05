@@ -53,9 +53,57 @@
         </div>
       </div>
     </nav>
+    <div class="banner">
+      <img src="images/world.png" alt="" class="world" />
+      <h1 class="heading">MEET THE SPECIALISTS...</h1>
+    </div>
     <section class="content">
       <div class="containing">
-        <h2>Our Specialists</h2>
+        <h2>Sickle Cell Anemia</h2>
+      </div>
+      <div class="slider">
+        <div id="slider">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <div id="slides">
+            <div id="overflow">
+              <div class="inner">
+                <div class="slide slide_1">
+                  <div class="slide-content">
+                    <img src="images/sickle_cell_1.jpeg" alt="" />
+                    <div>Dr. Sheela Nampoothiri</div>
+                    <p>M.S., M.D., BAMS</p>
+                  </div>
+                </div>
+                <div class="slide slide_2">
+                  <div class="slide-content">
+                    <img src="images/sickle_cell_2.jpeg" alt="" />
+                    <div>Dr. Sheela Nampoothiri</div>
+                    <p>M.S., M.D., BAMS</p>
+                  </div>
+                </div>
+                <div class="slide slide_3">
+                  <div class="slide-content">
+                    <img src="images/sickle_cell_3.jpeg" alt="" />
+                    <div>Dr. Sheela Nampoothiri</div>
+                    <p>M.S., M.D., BAMS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+          <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer-distributed">
@@ -116,5 +164,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/nav.js"></script>
+    <script src="js/doctor.js"></script>
   </body>
 </html>
