@@ -750,4 +750,37 @@ function news(res) {
     i++;
   }
 }
+
+function newsSlider() {
+  var i = 0;
+
+  document.getElementById("containing-news").innerHTML = "";
+  while (i < 5) {
+    $("#contain").append(
+      `
+          <a class="white" href="` +
+        res[i].url +
+        `">
+              <div class="card">
+                  <div class="card__header">
+                  <img src="` +
+        res[i].urlToImage +
+        `" alt="card__image" class="card__image" width="600" />
+                  </div>
+                  <div class="card__body">
+                  <h4>` +
+        res[i].title +
+        `</h4>
+                  <p>` +
+        res[i].description +
+        `</p>
+                  </div>
+              </div>
+          </a>
+      `
+    );
+    i++;
+  }
+}
+
 getNews();

@@ -40,13 +40,13 @@ function logout() {
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
   if (scroll > 00) {
-    $("nav").css("background", "#3E8DA8");
-    $(".sub-menu").css("background", "#3E8DA8");
+    $("nav").css("background", "#fff");
+    $(".sub-menu").css("background", "#fff");
     $("nav").css("box-shadow", "0 10px 20px rgba(0, 0, 0, 0.2)");
-    $(".navbar .links li .sub-menu a").css("color", "#fff");
-    $(".navbar .links li a").css("color", "#fff");
-    $(".navbar .logo a").css("color", "#fff");
-    $("nav .navbar .links li .arrow").css("color", "#fff");
+    $(".navbar .links li .sub-menu a").css("color", "#000");
+    $(".navbar .links li a").css("color", "#000");
+    $(".navbar .logo a").css("color", "#000");
+    $("nav .navbar .links li .arrow").css("color", "#000");
   } else {
     $("nav").css("background", "transparent");
     $("nav").css("box-shadow", "none");
