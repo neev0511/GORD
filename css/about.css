@@ -1,0 +1,22 @@
+.team {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card {
+    margin-bottom: 10px;
+}
+.card-team-image img{
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.card-team{
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
