@@ -84,7 +84,7 @@ nav .navbar .links li .sub-menu{
   z-index: 2;
 }
 nav .navbar .links li:hover .htmlCss-sub-menu,
-nav .navbar .links li:hover .js-sub-menu{
+nav .navbar .links li:hover .js-sub-menu, nav .navbar .links li:hover .diseases-sub-menu{
   display: block;
 }
 .navbar .links li .sub-menu li{
@@ -133,7 +133,7 @@ nav .navbar .links li:hover .js-sub-menu{
   top: 80px;
   height: 60px;
   width: 300px;
-  background: #3E8DA8;
+  background: #fff;
   border-radius: 6px;
   opacity: 0;
   pointer-events: none;
@@ -143,7 +143,7 @@ nav .navbar .links li:hover .js-sub-menu{
   top: 65px;
   opacity: 1;
   pointer-events: auto;
-  background: #3E8DA8;
+  background: #fff;
 }
 nav {
   z-index: 1000;
@@ -153,7 +153,7 @@ nav {
   position: absolute;
   height: 20px;
   width: 20px;
-  background: #3E8DA8;
+  background: #fff;
   right: 10px;
   top: -6px;
   transform: rotate(45deg);
@@ -229,7 +229,7 @@ nav {
     display: block;
     max-width: 270px;
     width: 100%;
-    background:  #3E8DA8;
+    background:  #fff;
     line-height: 40px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -298,20 +298,23 @@ nav .navbar .links li .sub-menu li{
     display: none;
   }
   nav .navbar .links li:hover .htmlCss-sub-menu,
-  nav .navbar .links li:hover .js-sub-menu{
+  nav .navbar .links li:hover .js-sub-menu, nav .navbar .links li:hover .diseases-sub-menu{
     display: none;
   }
 .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show3 .links .js-sub-menu, .navbar .nav-links.show4 .links .diseases-sub-menu
   .navbar .nav-links.show2 .links .more .more-sub-menu{
       display: block;
     }
     .navbar .nav-links.show1 .links .htmlcss-arrow,
-    .navbar .nav-links.show3 .links .js-arrow{
+    .navbar .nav-links.show3 .links .js-arrow, .navbar .nav-links.show2 .links .diseases-arrow{
         transform: rotate(180deg);
 }
     .navbar .nav-links.show2 .links .more-arrow{
       transform: rotate(90deg);
+    }
+    .diseases-submenu {
+      display: block;
     }
 }
 @media (max-width: 830px) {

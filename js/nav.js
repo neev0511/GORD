@@ -23,6 +23,16 @@ let dropdown2 = document.querySelector(".dropdown2");
 dropdown2.onclick = function () {
   navLinks.classList.toggle("show3");
 };
+let dropdown3 = document.querySelector(".dropdown3");
+dropdown3.onclick = function () {
+  if (screen.width < 900) {
+    if (document.querySelector(".diseases-sub-menu").style.display === "none") {
+      document.querySelector(".diseases-sub-menu").style.display = "block";
+    } else {
+      document.querySelector(".diseases-sub-menu").style.display = "none";
+    }
+  }
+};
 
 if (localStorage.getItem("login") === "true") {
   document.querySelector(".login_account").style.display = "inline-block";
