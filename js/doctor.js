@@ -42,7 +42,7 @@ if (localStorage.getItem("login") === "true") {
 }
 
 function fabry_meet() {
-  console.log("fabry");
+  window.location.href = "http://127.0.0.1:5500/fabry_meet.html";
 }
 function sickle_cell_meet() {
   console.log("sickle");
