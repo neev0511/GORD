@@ -1,4 +1,6 @@
 /* The footer is fixed to the bottom of the page */
+@import url('http://fonts.cdnfonts.com/css/georgia');
+
 
 footer {
     bottom: 0;
@@ -12,16 +14,17 @@ footer {
 }
 
 .footer-distributed {
-    background-color: #2d2a30;
+    background-color: #026b81;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
+    font-family: 'Georgia', sans-serif;
+    padding: 50px 50px 40px 30px;
     justify-content: space-evenly;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right, .footer-distributed .footer-corner {
     display: inline-block;
     vertical-align: top;
 }
@@ -29,23 +32,32 @@ footer {
 .footer-company-about-readmore {
     color: #92999f;
     text-decoration: none;
+    font-family: 'Georgia', sans-serif;
+
 }
+
 
 /* Footer left */
 
 .footer-distributed .footer-left {
     width: 30%;
+    font-family: 'Georgia', sans-serif;
+
 }
 
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 36px 'Cookie', cursive;
     margin: 0;
+    font-family: 'Georgia', sans-serif;
+
 }
 
 
 .footer-distributed h3 span {
-    color: #e0ac1c;
+    color: #e94949;
+    font-weight: bold;
+    font-size: 70px;
+    
 }
 
 /* Footer links */
@@ -67,6 +79,8 @@ footer {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
+    bottom: 0;
+    text-align: right;
 }
 
 /* Footer Center */
@@ -76,7 +90,7 @@ footer {
 }
 
 .footer-distributed .footer-center i {
-    background-color: #33383b;
+    background-color: #026b81;
     color: #ffffff;
     font-size: 25px;
     width: 38px;
@@ -113,6 +127,7 @@ footer {
     ;
 }
 
+
 /* Footer Right */
 
 .footer-distributed .footer-right {
@@ -141,10 +156,10 @@ footer {
 
 .footer-distributed .footer-icons a {
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
-    background-color: #33383b;
+    background-color: #026b81;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -155,20 +170,22 @@ footer {
 }
 
 .footer-distributed .footer-icons a:hover {
-    background-color: #61DAFB;
+    background-color: #026b81;
 }
 
 .footer-links a:hover {
-    color: #61DAFB;
+    color: #026b81;
 }
 
 
 .social {
-    width: 35px;
+    width: 45px;
+    margin-top: 10px;
+    margin-right: 10px;  
 }
 
 .social-extra {
-    width: 30px;
+    width: 40px;
     margin-bottom: -5px;
     margin-top: 10px;
     margin-right: 10px;   
@@ -178,8 +195,15 @@ footer {
     padding-left: 100px;
 }
 
+.footer-right p, .footer-right a {
+    font-family: 'Georgia', sans-serif;
+}
+.footer-center p, .footer-center a{
+    font-family: 'Georgia', sans-serif;
+}
+
 @media (max-width: 880px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right, .footer-distributed .footer-corner {
         display: block;
         width: 100%;
         margin-bottom: 40px;
