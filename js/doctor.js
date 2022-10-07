@@ -45,8 +45,11 @@ function fabry_meet() {
   window.location.href = "http://127.0.0.1:5500/fabry_meet.html";
 }
 function sickle_cell_meet() {
-  console.log("sickle");
+  window.location.href = "http://127.0.0.1:5500/sickle_cell_meet.html";
 }
 function pompe_meet() {
-  console.log("pompe");
+  window.location.href = "http://127.0.0.1:5500/pompe_meet.html";
+}
+function nutrion_meet() {
+  window.location.href = "http://127.0.0.1:5500/nutrion_meet.html";
 }
