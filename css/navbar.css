@@ -9,6 +9,19 @@
 body{
   min-height: 100vh;
 }
+
+.chatbot {
+  width: 100%;
+}
+
+.chatbot-img img {
+  margin-left: 90%;
+  width: 50px;
+  top: auto;
+  bottom: 10px;
+  position: fixed;
+}
+
 nav{
   position: fixed;
   top: 0;
@@ -337,6 +350,14 @@ nav .navbar .links li .sub-menu li{
     font-size: 30px;
     margin-bottom: -20px;
   }
+  .chatbot-img img {
+    margin-left: 85%;
+    width: 50px;
+    top: auto;
+    bottom: 10px;
+    position: fixed;
+  }
+  
 }
 @media (max-width: 400px) {
   .world{

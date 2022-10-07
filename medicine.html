@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/medicine.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css"
-    />
-    <link rel="stylesheet" href="css/doctor.css" />
   </head>
   <body>
     <nav>
@@ -34,6 +36,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="doctor.html">Doctors</a></li>
             <li><a href="medicine.html">Medicines</a></li>
+
             <li>
               <a href="#">Connect with</a>
               <i class="bx bxs-chevron-down dropdown2 arrow"></i>
@@ -42,6 +45,15 @@
                 <li><a href="ngo.html">NGOs</a></li>
                 <li><a href="nutrition.html">Nutritionists</a></li>
                 <li><a href="pathlab.html">Pathlabs</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Diseases</a>
+              <i class="bx bxs-chevron-down dropdown3 arrow"></i>
+              <ul class="diseases-sub-menu sub-menu">
+                <li><a href="fabry.html">Fabry</a></li>
+                <li><a href="pompe.html">Pompe</a></li>
+                <li><a href="sickle_cell.html">SIckle Cell Anemia</a></li>
               </ul>
             </li>
             <li class="login_account">
@@ -59,14 +71,78 @@
     </nav>
     <div class="banner">
       <img src="images/world.png" alt="" class="world" />
-      <h1 class="heading">MEET OUR SPECIALISTS...</h1>
+      <h1 class="heading">Partnered Companies</h1>
     </div>
     <section class="content" id="content">
-      <div id="sickle-cell-disease">
-        <div class="normal-heading">
-          <h2>Companies</h2>
+      <div class="normal-heading">
+        <h2 style="margin-top: 50px">Sickle Cell</h2>
+      </div>
+      <div class="cards_medicine">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="images/gbt.png" class="card-img" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Global Blood Therapeutics</h5>
+                <p class="card-text">
+                  Global Blood Therapeutics (GBT) is a biopharmaceutical company
+                  dedicated to the discovery, development and delivery of
+                  life-changing treatments that provide hope to underserved
+                  patient communities. Founded in 2011, GBT is delivering on its
+                  goal to transform the treatment and care of sickle cell
+                  disease (SCD), a lifelong, devastating inherited blood
+                  disorder.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slider">Slider for all the Companies</div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="images/Novartis.png" class="card-img" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Novartis pharmaceuticals corporation</h5>
+                <p class="card-text">
+                  Novartis AG is a Swiss-American multinational pharmaceutical
+                  corporation based in Basel, Switzerland and Cambridge,
+                  Massachusetts, United States. It is one of the largest
+                  pharmaceutical companies in the world.<br />
+                  Crizanlizumab (Adakveo) - This drug, given by injection, can
+                  help reduce the frequency of pain crises in adults and
+                  children older than 16. Side effects can include nausea, joint
+                  pain, back pain and fever.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="normal-heading">Pompe</div>
+      <div class="cards_medicine">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="images/sanofi.png" class="card-img" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sanofi Genzyme</h5>
+                <p class="card-text">
+                  Sanofi Genzyme offers a wide range of support services to
+                  people with Pompe disease and their families. Alglucosidase
+                  alfa, sold under the brand name Myozyme among others, is an
+                  enzyme replacement therapy orphan drug for treatment of Pompe
+                  disease, a rare lysosomal storage disorder.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer-distributed">
