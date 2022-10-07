@@ -1,0 +1,208 @@
+:root {
+    /* --background-color: rgb(255, 238, 0); */
+    --background-color: white;
+    /* --color1: white; */
+    --color1: white;
+    /* --color2: rgb(207, 50, 50); */
+    --color2: #fab43a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+    height: 300px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #efefef;
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+  }
+
+  
+  .wrapper-chat {
+    margin: auto;
+    margin-top: 3%;
+    width: 350px;
+    height: 400px;
+    background-color: #efefef;
+    border-radius: 10px;
+  }
+
+  .header-chat {
+    height: 13%;
+    width: 100%;
+    background-color: var(--color2);
+    border-radius: 10px;
+  }
+
+  .text-chat {
+    text-align: center;
+    justify-content: center;
+    padding-top: 7%;
+    font-size: 24px;
+    color: var(--color1);
+  }
+
+  .line-header-chat {
+    width: 100%;
+    height: 5%;
+    margin-top: -3%;
+    background-color: var(--color2);
+  }
+
+  .display-chat {
+    width: 100%;
+    height: 80%;
+    background-color: #efefef;
+    border-radius: 10px;
+    overflow-y: scroll;
+  }
+
+  .keyboard {
+    width: 100%;
+    background-color: var(--color1);
+    border-radius: 10px;
+    height: 15%;
+  }
+
+  .keyboard input {
+    width: 70%;
+    border: none;
+    background-color: var(--color1);
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 10px;
+  }
+
+  .keyboard input::selection {
+    border: none;
+  }
+
+  .keyboard button {
+    width: 24%;
+    height: 10%;
+    font-size: 20px;
+    background-color: var(--color2);
+    border: none;
+    border-radius: 5px;
+    color: var(--color1);
+    min-height: 30px;
+  }
+
+  /* Chats Code */
+  .box {
+    background-color: var(--color1);
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 5%;
+    padding-top: 5%;
+    position: relative;
+    border: 1px solid var(--color1);
+    animation: myLeft 2s;
+    color: var(--color2);
+  }
+
+  @keyframes myLeft {
+    0% {
+      left: 200px;
+      top: 0px;
+    }
+
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  .main-text {
+    padding-left: 10%;
+    padding-bottom: 10%;
+    word-break: normal;
+  }
+
+  .text ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color2);
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+
+  .text ul li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 10%;
+    color: var(--color2);
+    text-align: left;
+  }
+
+  .margin {
+    margin-top: 10%;
+    height: 10%;
+    color: var(--color1);
+  }
+
+  .box-user {
+    background-color: var(--color2);
+    width: 200px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 5%;
+    color: #ffffff;
+    padding-top: 5%;
+    border: 1px solid var(--color2);
+    animation: myLeft 2s;
+  }
+
+  @keyframes myLeft {
+    0% {
+      right: 200px;
+      top: 0px;
+    }
+
+    100% {
+      right: 0px;
+      top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .wrapper-chat {
+      width: 300px;
+      height: 400px;
+      margin-top: 50%;
+    }
+    #input_question {
+      width: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .wrapper-chat {
+      width: 250px;
+      height: 350px;
+      margin-top: 50%;
+    }
+    .box-user {
+      width: 150px;
+    }
+    .box {
+      width: 150px;
+    }
+  }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -47,16 +48,6 @@
     </style>
   </head>
   <body>
-    <div class="chatbot">
-      <div class="chatbot-img">
-        <img
-          src="images/chat.png"
-          alt=""
-          onclick="displayChange(this)"
-          id="chatbot_img"
-        />
-      </div>
-    </div>
     <nav>
       <div class="navbar">
         <i class="bx bx-menu"></i>
@@ -107,6 +98,100 @@
     <div class="banner">
       <img src="images/world.png" alt="" class="world" />
       <h1 class="heading">TOGETHER WE STAND!</h1>
+    </div>
+    <div class="chatbot">
+      <div class="chatbot-img">
+        <img
+          src="images/chat.png"
+          alt=""
+          onclick="displayChange(this)"
+          id="chatbot_img"
+        />
+        <div class="chat_ui" id="chat_ui">
+          <div class="wrapper-chat">
+            <div class="header-chat">
+              <div class="text-chat">Earth The Chatbot</div>
+            </div>
+            <div class="line-header-chat"></div>
+            <!-- Text Area of chatbot -->
+            <div class="display-chat">
+              <div class="wrapper">
+                <!-- Starter Text -->
+                <br />
+                <div class="main box">
+                  <div class="text">
+                    <div class="main-text">
+                      Hello there 👋. I am earth 🌎 and this is how you can help
+                      me with E-Waste Management
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="main box">
+                  <div class="text">
+                    <div class="main-text">
+                      These are some ideas on how you can help save me from
+                      E-Waste
+                    </div>
+                    <ul>
+                      <div class="line"></div>
+                      <li>
+                        <button onclick="donate()">
+                          <dfn title="Click to know more">Donate</dfn>
+                        </button>
+                      </li>
+                      <div class="line"></div>
+                      <li>
+                        <button onclick="sell()">
+                          <dfn title="Click to know more">Sell</dfn>
+                        </button>
+                      </li>
+                      <div class="line"></div>
+                      <li>
+                        <button onclick="scrap()">
+                          <dfn title="Click to know more">Scrap</dfn>
+                        </button>
+                      </li>
+                      <div class="line"></div>
+                      <div class="margin">Neev & Gurtej GDGPSVK</div>
+                    </ul>
+                  </div>
+                </div>
+                <br />
+                <div class="main box">
+                  <div class="text">
+                    <div class="main-text">Have any questions 🙋‍♂️</div>
+                    <ul>
+                      <div class="line"></div>
+                      <li>
+                        <button style="text-align: left" onclick="start_FAQs()">
+                          FAQs
+                        </button>
+                      </li>
+                      <div class="line"></div>
+                      <li>
+                        <button onclick="input_focus()">Type a question</button>
+                      </li>
+                      <div class="line"></div>
+                      <div class="margin"></div>
+                    </ul>
+                  </div>
+                </div>
+                <br />
+              </div>
+            </div>
+            <div class="keyboard">
+              <input
+                type="text"
+                placeholder="⌨  Type a question..."
+                id="input_question"
+                autocomplete="off"
+              />
+              <button onclick="keyboard()" id="send_btn">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <section class="content">
       <div class="popup">

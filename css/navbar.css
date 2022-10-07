@@ -10,16 +10,22 @@ body{
   min-height: 100vh;
 }
 
-.chatbot {
-  width: 100%;
-}
-
-.chatbot-img img {
+.chatbot-img {
   margin-left: 90%;
-  width: 50px;
+
   top: auto;
   bottom: 10px;
   position: fixed;
+}
+
+.chatbot-img img {
+  width: 50px;
+}
+
+.chat_ui {
+  display: none;
+  margin-left: -145%;
+  margin-top: -500px;
 }
 
 nav{
@@ -212,6 +218,9 @@ nav {
   .heading{
     margin-top: -150px;
     margin-bottom: 0px;
+  }
+  .chat_ui {
+    margin-left: -200%;
   }
 }
 @media (max-width:1000px) {
