@@ -60,10 +60,26 @@
     .popup {
         width: 250px;
     }
+    #close {
+        color: #860505;
+        margin-left: 150px;
+    }
+    .popup h2 {
+        margin-left: -20px;
+    }
 }
 
 @media (max-width: 340px) {
     .popup {
         width: 200px;
+    }
+    .popup h2 {
+        margin-left: -40px;
+    }
+    #close {
+        margin-left: 120px;
+    }
+    .popup a {
+        margin-left: -25px;
     }
 }
