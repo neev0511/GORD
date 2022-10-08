@@ -169,6 +169,10 @@
   left: -100%;
 }
 
+.imgLOG {
+  margin-left: 50px;
+}
+
 @media (max-width: 991px) {
   .content section .container {
     max-width: 400px;
