@@ -205,18 +205,19 @@ nav {
   margin-top: -200px;
 }
 .heading {
-  margin-top: -250px;
+  margin-top: -350px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 1000;
   text-decoration: underline;
   text-decoration-color: #e94949;
   font-size: 50px;
   margin-bottom: 80px;
-  color: #026b81;
+  font-family: "Roboto"
+  ;
 }
 @media (max-width: 1050px) {
   .heading{
-    margin-top: -150px;
+    margin-top: -300px;
     margin-bottom: 0px;
   }
   .chat_ui {
