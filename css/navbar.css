@@ -208,8 +208,6 @@ nav {
   margin-top: -350px;
   text-align: center;
   font-weight: 1000;
-  text-decoration: underline;
-  text-decoration-color: #e94949;
   font-size: 50px;
   margin-bottom: 80px;
   font-family: "Roboto"
@@ -219,6 +217,9 @@ nav {
   .heading{
     margin-top: -300px;
     margin-bottom: 0px;
+  }
+  .content .banner {
+    margin-top: 00px;    
   }
   .chat_ui {
     margin-left: -200%;
