@@ -212,6 +212,7 @@ nav {
   text-decoration-color: #e94949;
   font-size: 50px;
   margin-bottom: 80px;
+  color: #026b81;
 }
 @media (max-width: 1050px) {
   .heading{
