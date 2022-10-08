@@ -5,3 +5,4 @@ $("#age").append(" " + localStorage.getItem("age"));
 $("#gender").append(" " + localStorage.getItem("gender"));
 $("#blood_group").append(" " + localStorage.getItem("blood_group"));
 $("#disease").append(" " + localStorage.getItem("disease"));
+$("#phone").append(" " + localStorage.getItem("phone"));
