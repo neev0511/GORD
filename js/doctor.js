@@ -42,14 +42,18 @@ if (localStorage.getItem("login") === "true") {
 }
 
 function fabry_meet() {
-  window.location.href = "http://127.0.0.1:5500/fabry_meet.html";
+  window.location.href =
+    "https://neev0511.github.io/gdgpsvk_hackathon/fabry_meet.html";
 }
 function sickle_cell_meet() {
-  window.location.href = "http://127.0.0.1:5500/sickle_cell_meet.html";
+  window.location.href =
+    "https://neev0511.github.io/gdgpsvk_hackathon/sickle_cell_meet.html";
 }
 function pompe_meet() {
-  window.location.href = "http://127.0.0.1:5500/pompe_meet.html";
+  window.location.href =
+    "https://neev0511.github.io/gdgpsvk_hackathon/pompe_meet.html";
 }
 function nutrion_meet() {
-  window.location.href = "http://127.0.0.1:5500/nutrion_meet.html";
+  window.location.href =
+    "https://neev0511.github.io/gdgpsvk_hackathon/nutrion_meet.html";
 }
