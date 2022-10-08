@@ -1,9 +1,84 @@
 .home-heading {
     font-size: 35px;
     font-weight: 300;
-    text-align: center;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: #026b81;
+    background-color: #026b81; 
+    text-align: left; 
+    vertical-align: left; 
+    padding:20px 47px;
+    text-align: left;
+    margin-right: 800px;
+    margin-left: 60px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.band-heading {
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+    text-decoration: underline;
+    background-color: #026b81; 
+    vertical-align: left; 
+    padding:20px 47px;
+    margin-right: 900px;
+    margin-left: 70px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.prob-heading {
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+    text-decoration: underline;
+    background-color: #026b81; 
+    vertical-align: right; 
+    padding:20px 47px;
+    margin-right: 60px;
+    margin-left: 850px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-content {
+    color: #053d49;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.what {
+    float: right; 
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.band {
+    float: right; 
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 200px;
+    height: 300px; 
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.probs {
+    float: left; 
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
 }
 
 .left-home {
