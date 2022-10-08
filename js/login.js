@@ -2,6 +2,8 @@ const toggleForm = () => {
   const container = document.querySelector(".container");
   container.classList.toggle("active");
 };
+document.getElementById("registration").addEventListener("click", register());
+
 function register() {
   var name = document.getElementById("register-name").value;
   var email = document.getElementById("register-email").value;

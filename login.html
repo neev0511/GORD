@@ -132,6 +132,7 @@
                   name=""
                   placeholder="Age"
                   required
+                  min="1"
                   id="register-age"
                 />
                 <label for="" style="margin-left: 10px">Gender:</label>
@@ -140,13 +141,18 @@
                   <option value="Female">Female</option>
                   <option value="Other">Other</option></select
                 ><br />
-                <input
-                  type="text"
-                  name=""
-                  placeholder="Blood Group"
-                  id="register-blood-group"
-                  required
-                />
+                <br />
+                <label for="" style="margin-left: 10px">Blood Group:</label>
+                <select name="gender" id="register-blood-group">
+                  <option value="A+">A+</option>
+                  <option value="B+">B+</option>
+                  <option value="AB+">AB+</option>
+                  <option value="A-">A-</option>
+                  <option value="B-">B-</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option></select
+                ><br />
                 <input
                   type="text"
                   name=""
@@ -166,7 +172,7 @@
                   type="submit"
                   name=""
                   value="Sign Up"
-                  onclick="register();"
+                  id="registeration"
                 />
                 <p class="signup">
                   Already have an account ?
