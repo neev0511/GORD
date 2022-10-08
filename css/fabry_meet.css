@@ -28,3 +28,14 @@ input[type='submit'] {
     margin-left: 35%;
     width: 250px;
   }
+
+  @media (max-width: 550px) {
+    .formBx {
+      margin-left: 20%;
+    }
+  }
+  @media (max-width: 333px) {
+    .formBx {
+      margin-left: 10%;
+    }
+  }

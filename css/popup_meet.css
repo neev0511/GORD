@@ -1,0 +1,85 @@
+.popup{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 30px 40px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #860505;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    z-index: 100000;
+}
+.popup p {
+    text-align: center;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #026b81;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+#close {
+    color: #860505;
+}
+
+@media (max-width: 550px) {
+    .popup {
+        width: 300px;
+    }
+    #close {
+        color: #860505;
+        margin-left: 150px;
+    }
+    .popup h2 {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .popup {
+        width: 250px;
+    }
+    .popup h2 {
+        margin-left: -40px;
+    }
+    #close {
+        margin-left: 120px;
+    }
+    .popup a {
+        margin-left: -25px;
+    }
+}
