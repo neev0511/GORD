@@ -1,10 +1,4 @@
-.my_request {
-    width: 280px;
-    border-radius: 10px;
-    position: fixed;
-    left: 50%;
-    display: none;
-}.popup{
+.popup{
     background-color: #ffffff;
     width: 450px;
     padding: 30px 40px;
