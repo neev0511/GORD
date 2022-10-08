@@ -118,6 +118,7 @@
       </div>
       <div class="popup" id="popup1">
         <form onsubmit="return false;">
+          <button id="close">&times;</button>
           <h2 style="text-align: center">Schedule Appointment</h2>
           <p style="text-align: center">
             <label for="" style="margin-left: 10px">Date Slot: </label>
@@ -151,8 +152,8 @@
           <select name="city" id="city">
             <option value="All" selected>All</option>
             <option value="Delhi NCR">Delhi NCR</option>
-            <option value="Mohlai">Mohali</option>
-            <option value="Bhatinda">Bhatinda</option>
+            <option value="Mohali">Mohali</option>
+            <option value="Bathinda">Bathinda</option>
             <option value="Dehradun">Dehradun</option>
             <option value="Saharanpur">Saharanpur</option>
             <option value="Srinagar">Srinagar</option>
@@ -311,6 +312,10 @@
     <script src="js/nav.js"></script>
     <script>
       document.getElementById("closed").addEventListener("click", function () {
+        document.querySelector("#popup").style.display = "none";
+      });
+      document.getElementById("close").addEventListener("click", function () {
+        document.querySelector("#popup1").style.display = "none";
         document.querySelector("#popup").style.display = "none";
       });
       document
@@ -771,7 +776,10 @@
                   </p>
                   <div
                     class="btn btn-primary request"
-                    onclick="request_test()"
+                    onclick="request_test(this)"
+                id="` +
+                res[i].name +
+                `"
                   >
                     Request
                   </div>
@@ -807,7 +815,10 @@
               </p>
               <div
                 class="btn btn-primary request"
-                onclick="request_test()"
+                onclick="request_test(this)"
+                id="` +
+                  res[i].name +
+                  `"
               >
                 Request
               </div>
