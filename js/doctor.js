@@ -32,9 +32,13 @@ if (localStorage.getItem("login") === "true") {
     $("#sickle-cell-disease").css("display", "none");
     $("#fabry-disease").css("display", "none");
     $("#pompe-disease").css("display", "block");
-  } else {
+  } else if (localStorage.getItem("disease") === "Sickle Cell Anemia") {
     $("#pompe-disease").css("display", "none");
     $("#fabry-disease").css("display", "none");
+    $("#sickle-cell-disease").css("display", "block");
+  } else {
+    $("#pompe-disease").css("display", "block");
+    $("#fabry-disease").css("display", "block");
     $("#sickle-cell-disease").css("display", "block");
   }
 } else {
