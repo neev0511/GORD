@@ -1,3 +1,12 @@
+@import url('http://fonts.cdnfonts.com/css/abyssinica-sil');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', sans-serif;
+                                                
+  }
 .team {
     display: flex;
     justify-content: space-evenly;

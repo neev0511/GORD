@@ -1,3 +1,12 @@
+@import url('http://fonts.cdnfonts.com/css/abyssinica-sil');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', sans-serif;
+                                                
+  }
 :root {
     /* --background-color: rgb(255, 238, 0); */
     --background-color: white;
@@ -6,6 +15,7 @@
     /* --color2: rgb(207, 50, 50); */
     --color2: #026b81;
   }
+
 
   ::-webkit-scrollbar {
     width: 15px;

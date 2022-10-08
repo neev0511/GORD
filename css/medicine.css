@@ -1,3 +1,13 @@
+@import url('http://fonts.cdnfonts.com/css/abyssinica-sil');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abyssinica SIL', sans-serif;
+                                                
+  }
+
 .cards_medicine {
     margin-left: 10%;
     margin-right: 10%;
