@@ -16,6 +16,83 @@
     />
     <link rel="stylesheet" href="css/fabry_meet.css" />
     <link rel="stylesheet" href="css/popup_meet.css" />
+    <style>
+      .formBx {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .signupBx {
+        border: 10px solid #026b81;
+        margin-bottom: 20px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
+      #dr {
+        margin-top: -20px;
+        height: 280px;
+      }
+      form {
+        margin-left: -100px;
+      }
+      .mt-50 {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      @media (max-width: 830px) {
+        #dr {
+          display: none;
+        }
+        .signupBx {
+          width: 300px;
+          margin-top: 50px;
+        }
+        input {
+          width: 150px;
+        }
+        input,
+        select {
+          margin-left: 30px;
+        }
+        #submit {
+          margin-left: 130px;
+        }
+        #doctor {
+          margin-left: 100px;
+        }
+        label {
+          margin-left: 20px;
+        }
+      }
+      @media (max-width: 550px) {
+        label {
+          margin-left: 50px;
+        }
+      }
+      @media (max-width: 332px) {
+        .signupBx {
+          width: 250px;
+        }
+        input {
+          width: 150px;
+        }
+        input,
+        select {
+          margin-left: 150px;
+        }
+        #submit {
+          margin-left: 130px;
+        }
+        #doctor {
+          margin-left: 140px;
+        }
+        label {
+          margin-left: 100px;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -83,7 +160,8 @@
       <div class="user signupBx">
         <div class="formBx">
           <form onsubmit="return false;" autocomplete="on">
-            <label for="" style="margin-left: 10px">Nutritionists Name:</label>
+            <label for="">Nutritionists Name:</label>
+            <div class="mt-50"></div>
             <select name="disease" id="doctor">
               <option value="Dr. Kshama Metre">Dr. Kshama Metre</option>
               <option value="Dr. Merbai Ardesir Vakil">
@@ -94,8 +172,8 @@
               <option value="Dr. Chitra Bharucha">
                 Dr. Chitra Bharucha
               </option></select
-            ><br />
-            <label for="" style="margin-left: 10px">Date Slot: </label>
+            ><br /><br />
+            <label for="">Date Slot: </label>
             <input
               type="date"
               id="meeting-date"
@@ -104,7 +182,8 @@
               max="2022-10-14"
               required
             />
-            <label for="" style="margin-left: 10px">Time Slot: </label>
+            <br />
+            <label for="">Time Slot: </label>
             <input
               type="time"
               id="meeting-time"
@@ -120,8 +199,10 @@
               name=""
               value="Schedule"
               onclick="zoom_link();"
+              id="submit"
             />
           </form>
+          <img src="images/doctor.png" alt="" id="dr" />
         </div>
       </div>
     </section>
