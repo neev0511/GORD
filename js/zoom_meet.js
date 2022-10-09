@@ -88,7 +88,8 @@ function zoom_link() {
     time.val().startsWith("06") ||
     time.val().startsWith("07") ||
     time.val().startsWith("08") ||
-    ends === true
+    ends === true ||
+    time.val() === "18:30"
   ) {
     document.querySelector(".popup").style.display = "none";
   } else {
