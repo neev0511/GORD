@@ -36,6 +36,11 @@ nav{
   height: 70px;
   z-index: 99;
 }
+
+.navbar:hover{
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 nav .navbar{
   height: 100%;
   max-width: 1250px;
