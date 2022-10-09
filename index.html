@@ -33,7 +33,7 @@
         flex-direction: row;
         width: 100%;
         gap: 3rem;
-        animation: scrolling 100s infinite;
+        animation: scrolling 70s infinite;
         animation-play-state: running;
       }
       #card-slider:hover {
@@ -692,20 +692,20 @@
         $("#card-slider").append(
           `
       <a class="white" href="` +
-            res[i].url +
+            res[j].url +
             `">
               <div class="card">
                   <div class="card__header">
                   <img src="` +
-            res[i].urlToImage +
+            res[j].urlToImage +
             `" alt="card__image" class="card__image" width="600" />
                   </div>
                   <div class="card__body">
                   <h4>` +
-            res[i].title +
+            res[j].title +
             `</h4>
                   <p>` +
-            res[i].description +
+            res[j].description +
             `</p>
                   </div>
               </div>
