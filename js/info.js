@@ -38,7 +38,7 @@ if (
       collaborated companies<br />
       GET 15% discount from our collaborated company
     </p>
-    <button href="#" class="btn btn-primary" onclick="plan(1)">
+    <button href="#" class="btn btn-primary" onclick="plan(2)">
       Select
     </button>
   </div>
