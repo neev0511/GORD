@@ -105,6 +105,12 @@
     }
   }
 
+  @media (max-width:601px) {
+    .prob-heading{
+        margin-left: 15%;
+    }
+  }
+
   @media (max-width: 400px) {
     .prob-heading,.band-heading,.home-heading {
         width: 250px;
