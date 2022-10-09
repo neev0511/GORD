@@ -45,7 +45,7 @@
     text-align: center;
     vertical-align: center;
     position: relative;
-    margin-left: 70px;
+    margin-left: 35%;
     width: 400px;
 }
 
@@ -68,11 +68,17 @@
   .normal-heading {
     width: 300px;
     font-size: 30px;
+
 }
 }
 @media (max-width: 831px) {
   .content {
     margin-top: 00px;
+  }
+}
+@media (max-width: 500px) {
+  .normal-heading{
+  margin-left: 5%;
   }
 }
 @media (max-width: 400px) {
