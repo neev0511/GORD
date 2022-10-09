@@ -33,9 +33,20 @@
   .normal-heading {
     font-size: 35px;
     font-weight: 300;
-    text-align: center;
+    color: white;
     text-decoration: underline;
-    text-decoration-color: #026b81;
+    background-color: #026b81; 
+    padding:20px 47px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 90px;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    margin-left: 70px;
+    width: 400px;
 }
 
 .left-home {
@@ -54,4 +65,21 @@
     margin-right: 20px;
     font-size: 17px;
   }
+  .normal-heading {
+    width: 300px;
+    font-size: 30px;
+}
+}
+@media (max-width: 831px) {
+  .content {
+    margin-top: 00px;
+  }
+}
+@media (max-width: 400px) {
+  .normal-heading {
+      width: 250px;
+      font-size: 25px;
+      margin-left: 5%;
+      margin-top: 0px;
+  }    
 }

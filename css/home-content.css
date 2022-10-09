@@ -8,11 +8,11 @@
     vertical-align: left; 
     padding:20px 47px;
     text-align: left;
-    margin-right: 800px;
     margin-left: 60px;
     border-radius: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
+    width: 450px;
 }
 
 .band-heading {
@@ -23,7 +23,7 @@
     background-color: #026b81; 
     vertical-align: left; 
     padding:20px 47px;
-    margin-right: 900px;
+    width: 450px;
     margin-left: 70px;
     border-radius: 30px;
     margin-top: 50px;
@@ -39,12 +39,12 @@
     background-color: #026b81; 
     vertical-align: right; 
     padding:20px 47px;
-    margin-right: 60px;
-    margin-left: 850px;
     border-radius: 30px;
     margin-top: 50px;
+    margin-left: 70px;
     margin-bottom: 20px;
     text-align: center;
+    width: 450px;
 }
 
 .home-content {
@@ -100,4 +100,15 @@
       margin-right: 20px;
       font-size: 17px;
     }
+    .prob-heading,.band-heading,.home-heading {
+        width: 300px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .prob-heading,.band-heading,.home-heading {
+        width: 250px;
+        font-size: 25px;
+        margin-left: 5%;
+    }    
   }

@@ -44,8 +44,8 @@
     text-align: center;
     vertical-align: center;
     position: relative;
-    left: 420px;
-    right: 420px;
+    margin-left: 70px;
+    width: 400px;
 }
 
 .about-content {
@@ -60,3 +60,21 @@
     text-align: center;
     color: #026b81;
 }
+
+@media (max-width: 900px) {
+
+    .about-heading {
+        width: 300px;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .about-heading {
+        width: 250px;
+        font-size: 25px;
+        margin-left: 5%;
+        margin-top: 0px;
+    }    
+  }
