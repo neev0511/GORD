@@ -22,20 +22,38 @@
 
     <link rel="stylesheet" href="css/login_popup.css" />
     <style>
+      .container {
+        overflow-x: hidden;
+      }
       .footer-center {
         padding-left: 35px;
       }
-      .card-slider {
+      #card-slider {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        align-items: center;
-        justify-content: space-evenly;
+        width: 100%;
+        gap: 3rem;
+        animation: scrolling 100s infinite;
+        animation-play-state: running;
+      }
+      #card-slider:hover {
+        animation-play-state: paused;
+      }
+      .chatbot {
+        z-index: 100000;
+      }
+      @keyframes scrolling {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-9000px);
+        }
       }
       @media (max-width: 1130px) {
         .card-slider {
-          display: inline-flex;
+          display: flex;
+          flex-direction: row;
           gap: 3rem;
           align-items: center;
         }
@@ -174,7 +192,9 @@
         <h2 class="home-heading">TOP STORIES</h2>
         <div class="news-slider">
           <div class="cards">
-            <div class="container"><div class="card-slider"></div></div>
+            <div class="container">
+              <div class="card-slider" id="card-slider"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -431,6 +451,7 @@
     <script src="js/chatbot.js"></script>
     <script>
       var i = 0;
+      var j = 0;
       var res = [
         {
           source: { id: null, name: "Business Wire" },
@@ -640,8 +661,8 @@
             "Are you searching for steady stocks to put your money into right now? While no investment is entirely devoid of risk, you don't have to look far to find stable investments that can stand the test of … [+3654 chars]",
         },
       ];
-      while (i < 3) {
-        $(".card-slider").append(
+      while (i < 15) {
+        $("#card-slider").append(
           `
       <a class="white" href="` +
             res[i].url +
@@ -666,6 +687,33 @@
       `
         );
         i++;
+      }
+      while (j < 15) {
+        $("#card-slider").append(
+          `
+      <a class="white" href="` +
+            res[i].url +
+            `">
+              <div class="card">
+                  <div class="card__header">
+                  <img src="` +
+            res[i].urlToImage +
+            `" alt="card__image" class="card__image" width="600" />
+                  </div>
+                  <div class="card__body">
+                  <h4>` +
+            res[i].title +
+            `</h4>
+                  <p>` +
+            res[i].description +
+            `</p>
+                  </div>
+              </div>
+          </a>
+
+      `
+        );
+        j++;
       }
     </script>
   </body>
